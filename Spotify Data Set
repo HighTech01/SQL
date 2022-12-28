@@ -35,7 +35,7 @@ FROM Spotify_data
 GROUP BY artist, track;
 
 --Then I found who the top 10 artists are based on popularity
-SELECT track, artist, popularity
+SELECT track, artist, track_popularity
 FROM Spotify_data
 ORDER BY popularity DESC
 LIMIT 10;
